@@ -27,9 +27,8 @@ const coordinatesOffsets = {
     W : { x: -1, y: 0 },
 } as const;
 
-const getNextOrientation = (currentOrientation :Orientation, direction :Turn) :Orientation => {
-    return nextOrientation[currentOrientation][direction];
-};
+const getNextOrientation = (currentOrientation :Orientation, direction :Turn) :Orientation =>
+    nextOrientation[currentOrientation][direction];
 
 const getOffset = (orientation: Orientation) => coordinatesOffsets[orientation];
 
